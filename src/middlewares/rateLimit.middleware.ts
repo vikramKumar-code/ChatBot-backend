@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import redisClient from "../config/redis.js";
 
-const MAX_REQUESTS = 5;
+const MAX_REQUESTS = 20;
 const WINDOWS_SECONDS = 60;
 
 export const chatRateLimiter = async (
